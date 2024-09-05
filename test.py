@@ -28,5 +28,4 @@ def main(input_: str):
         print(e)
 
 while True:
-    user_input = input()
-    main(user_input)
+    main(input())
