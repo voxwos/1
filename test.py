@@ -9,13 +9,13 @@ def main(input_: str):
             raise Error("Формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)")
         if a[0] in range(1, 11) and a[2] in range(1, 11):
             if a[1] == "+":
-                print(a[0] + a[2])
+                print(str(a[0] + a[2]))
             elif a[1] == "-":
-                print(a[0] - a[2])
+                print(str(a[0] - a[2]))
             elif a[1] == "*":
-                print(a[0] * a[2])
+                print(str(a[0] * a[2]))
             elif a[1] == "/":
-                print(a[0] // a[2])
+                print(str(a[0] // a[2]))
             else:
                 raise Error("Неверная операция")
         else:
@@ -29,3 +29,4 @@ def main(input_: str):
 
 while True:
     main(input())
+
